@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: row;
   padding: 0% 2%;
+  padding-left: 0 !important;
 }
 
 .upcoming__heading {
@@ -27,8 +28,7 @@ hr {
   border: 2px solid #0259eb;
   border-radius: 16px;
   width: 3%;
-  margin-right: auto;
-  margin-left: 2%;
+  margin-left: 0;
   margin-top: -0.3%;
 }
 
@@ -49,7 +49,6 @@ hr {
 
 .upcoming__cardshow {
   background: #111229;
-  border-radius: 8px;
   border-radius: 8px;
   box-shadow: 10px -10px #301a68, 10px -10px #234c97;
 }

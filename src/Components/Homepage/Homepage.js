@@ -3,6 +3,7 @@ import React from "react";
 import Navbrand from "./navbrand.png";
 import BGImage from "./Rectangle.png";
 import Overlay from "./Overlay.png";
+import SearchIcon from "@material-ui/icons/Search";
 
 function Homepage() {
   return (
