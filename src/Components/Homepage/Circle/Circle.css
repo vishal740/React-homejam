@@ -1,0 +1,51 @@
+.homepage__circle {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 5%;
+  overflow-x: auto;
+}
+
+.homepage__circle__content {
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+  height: 100%;
+  padding: 20% 0;
+  display: grid !important;
+  place-items: center !important;
+}
+
+.homepage__circle__count {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 32px;
+  color: white;
+}
+
+.homepage__circle__label {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.homepage__circle__active {
+  border-right-color: #dd4cac;
+  border-bottom-color: #dd4cac;
+}
+
+@media only screen and (max-width: 600px) {
+  .homepage__circle {
+    width: 170px !important;
+    height: 155px !important;
+    margin: 0 3%;
+    display: inline-block;
+  }
+}

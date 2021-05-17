@@ -4,3 +4,9 @@
   width: 100vw;
   user-select: none;
 }
+
+@media screen and (max-width: 600px) {
+  .events {
+    height: 100%;
+  }
+}

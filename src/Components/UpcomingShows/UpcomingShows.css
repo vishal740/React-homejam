@@ -98,3 +98,22 @@ hr {
 .upcoming__card__ticket {
   margin-left: auto !important;
 }
+
+@media only screen and (max-width: 600px) {
+  .upcoming__card {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .upcoming__cardshow {
+    display: inline-block;
+  }
+
+  /* .upcoming__card {
+    display: inline-flexbox;
+    width: auto;
+    overflow-x: scroll !important;
+    white-space: nowrap !important;
+  } */
+}
