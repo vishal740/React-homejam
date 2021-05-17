@@ -59,4 +59,8 @@ hr {
     width: 100%;
     overflow-x: scroll !important;
   }
+
+  hr {
+    width: 10% !important;
+  }
 }
