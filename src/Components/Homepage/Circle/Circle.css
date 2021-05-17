@@ -41,7 +41,7 @@
   border-bottom-color: #dd4cac;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 987px) {
   .homepage__circle {
     width: 170px !important;
     height: 155px !important;

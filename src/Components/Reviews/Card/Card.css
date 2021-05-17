@@ -1,0 +1,74 @@
+.reviews__cardshow {
+  margin-top: 2%;
+  background: #0a0b1a;
+  border: 2px solid #e5af56;
+  border-radius: 16px;
+  padding: 2% 1%;
+  color: white !important;
+  width: 30%;
+  box-shadow: 10px -10px #368c95, 10px -10px #317ad8;
+}
+
+.reviews__cardshow__header {
+  display: flex;
+}
+
+.reviews__cardshow__image {
+  width: max-content;
+  margin-right: 5%;
+}
+
+.reviews__cardshow__heading {
+  width: 80%;
+}
+.reviews__cardshow__name {
+  font-family: Quattrocento;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.reviews__cardshow__heading > div {
+  width: 100%;
+}
+
+.reviews__cardshow__address {
+  display: flex;
+  flex-direction: row;
+  font-family: Nunito;
+  font-style: normal;
+  color: #e5c558;
+  opacity: 0.7;
+}
+
+.reviews__cardshow__address > img,
+.reviews__cardshow__address > p {
+  width: max-content;
+  height: 100%;
+  margin-right: 3%;
+}
+
+.reviews__cardshow__text {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  opacity: 0.9;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 987px) {
+  .reviews__cardshow {
+    display: inline-block !important;
+    padding: 2% 6%;
+    width: 100% !important;
+    margin-right: 10% !important;
+  }
+  .reviews__cardshow__text {
+    width: 100%;
+  }
+}

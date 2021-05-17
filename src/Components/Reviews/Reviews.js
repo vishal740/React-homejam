@@ -7,7 +7,7 @@ import Card__img3 from "./images/img3.png";
 import Card__img1 from "./images/img1.png";
 import Flag1 from "./images/🇺🇸.svg";
 import Flag2 from "./images/🇮🇹.svg";
-import { Card, CardDeck } from "react-bootstrap";
+import Card from "./Card/Card.js";
 
 function Reviews() {
   const card_details = [
@@ -51,30 +51,17 @@ function Reviews() {
       </div>
       <hr />
       <div className="reviews__card">
-        <CardDeck>
-          {card_details.map((e) => {
-            console.log(e);
-            return (
-              <Card className="reviews__carshow">
-                <Card.Body className="reviews__cardshow__header">
-                  <div className="reviews__cardshow__image">
-                    <img src={e.image} />
-                  </div>
-                  <div className="reviews__cardshow__heading">
-                    <div className="reviews__cardshow__name">{e.name}</div>
-                    <div className="reviews__cardshow__address">
-                      <img src={e.flag} />
-                      <p>{e.address}</p>
-                    </div>
-                  </div>
-                </Card.Body>
-                <Card.Text className="reviews__cardshow__text">
-                  {e.content}
-                </Card.Text>
-              </Card>
-            );
-          })}
-        </CardDeck>
+        {card_details.map((e) => {
+          return (
+            <Card
+              image={e.image}
+              flag={e.flag}
+              name={e.name}
+              address={e.address}
+              content={e.content}
+            />
+          );
+        })}
       </div>
     </div>
   );

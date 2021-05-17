@@ -1,7 +1,8 @@
 .reviews__div {
   height: 45%;
   width: 80%;
-  margin: 4% auto;
+  margin: 2% auto;
+  padding-bottom: 5%;
 }
 
 .reviews__header {
@@ -42,65 +43,21 @@ hr {
   margin-right: 1%;
 }
 
-.reviews__carshow {
-  margin-top: 2%;
-  background: #0a0b1a;
-  border: 2px solid #e5af56;
-  box-sizing: border-box;
-  border-radius: 16px;
-  padding: 2% 1%;
-  color: white !important;
-  box-shadow: 10px -10px #368c95, 10px -10px #317ad8;
-}
-
-.reviews__cardshow__header {
-  display: flex;
-}
-
-.reviews__cardshow__image {
-  width: max-content;
-  margin-right: 5%;
-}
-
-.reviews__cardshow__heading {
-  width: 80%;
-}
-.reviews__cardshow__name {
-  font-family: Quattrocento;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 32px;
-}
-
-.reviews__cardshow__heading > div {
-  width: 100%;
-}
-
-.reviews__cardshow__address {
+.reviews__card {
+  margin-top: 3%;
   display: flex;
   flex-direction: row;
-  font-family: Nunito;
-  font-style: normal;
-  color: #E5C558;
-  opacity: 0.7;
+  justify-content: space-between;
 }
 
-.reviews__cardshow__address > img,
-.reviews__cardshow__address > p {
-  width: max-content;
-  height: 100%;
-  margin-right: 3%;
+.reviews__card::-webkit-scrollbar {
+  display: none !important;
 }
 
-.reviews__cardshow__text {
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 24px;
-  opacity: 0.9;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+@media only screen and (max-width: 987px) {
+  .reviews__card {
+    width: auto !important;
+    padding: 0 5%;
+    overflow-x: scroll !important;
+  }
 }

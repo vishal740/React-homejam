@@ -45,75 +45,18 @@ hr {
 
 .upcoming__card {
   margin-top: 3%;
-}
-
-.upcoming__cardshow {
-  background: #111229;
-  border-radius: 8px;
-  box-shadow: 10px -10px #301a68, 10px -10px #234c97;
-}
-
-.upcoming__cardshow__title {
-  background: #e5c558;
-  border-radius: 1px;
-  width: max-content;
-  padding: 0 2%;
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  color: #682f26;
-}
-
-.upcoming__cardshow__name {
-  font-family: Libre Baskerville;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 32px;
-  color: #ffffff;
-}
-
-.text-muted {
-  color: #0259eb !important;
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 32px;
-}
-
-.upcoming__card__footer {
   display: flex;
   flex-direction: row;
-  color: #0259eb !important;
+  justify-content: space-between;
 }
 
-.upcoming__card__footer div {
-  display: grid !important;
-  place-items: center;
-  margin-left: 8%;
+.upcoming__card::-webkit-scrollbar {
+  display: none !important;
 }
 
-.upcoming__card__ticket {
-  margin-left: auto !important;
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 987px) {
   .upcoming__card {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .upcoming__cardshow {
-    display: inline-block;
-  }
-
-  /* .upcoming__card {
-    display: inline-flexbox;
-    width: auto;
     overflow-x: scroll !important;
-    white-space: nowrap !important;
-  } */
+  }
 }

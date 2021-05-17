@@ -1,11 +1,11 @@
 .events {
   background-color: #0a0b1a;
   height: 150vh;
-  width: 100vw;
+  width: 100%;
   user-select: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 987px) {
   .events {
     height: 100%;
   }
