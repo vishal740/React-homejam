@@ -39,16 +39,16 @@ function Homepage() {
 
   return (
     <div className="customNavbar">
-      <img className="bgimage" src={BGImage} />
-      <img className="bgimage" src={Overlay} />
+      <img className="bgimage" src={BGImage} alt="bgimage" />
+      <img className="bgimage" src={Overlay} alt="overlay" />
 
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">
-          <img src={Navbrand} />
+          <img src={Navbrand} alt="navbrand" />
         </a>
         <div className="navbar__reponsive__button">
           <SearchIcon className="navbar__search" />
-          <img src={Cart} />
+          <img src={Cart} alt="cart" />
         </div>
 
         <button
@@ -86,7 +86,7 @@ function Homepage() {
               </a>
             </li>
             <li class="nav-item active navbar__cart">
-              <img src={Cart} />
+              <img src={Cart} alt="cart" />
             </li>
           </ul>
         </div>
@@ -101,19 +101,19 @@ function Homepage() {
         </p>
       </div>
 
-        <div className="homepage__circle__maindiv">
-          {circle_details.map((e) => {
-            return (
-              <Circle
-                icon={e.icon}
-                count={e.count}
-                label={e.label}
-                colorClass={e.colorClass}
-              />
-            );
-          })}
-        </div>
+      <div className="homepage__circle__maindiv">
+        {circle_details.map((e) => {
+          return (
+            <Circle
+              icon={e.icon}
+              count={e.count}
+              label={e.label}
+              colorClass={e.colorClass}
+            />
+          );
+        })}
       </div>
+    </div>
   );
 }
 

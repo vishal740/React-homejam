@@ -10,7 +10,7 @@ function Circle({ icon, count, label, colorClass }) {
     >
       <div className="homepage__circle__content">
         <div>
-          <img src={icon} />
+          <img src={icon} alt="icon" />
         </div>
         <div className="homepage__circle__count">{count}</div>
         <div className="homepage__circle__label">{label}</div>
